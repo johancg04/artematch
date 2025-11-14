@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard Artista — ArteMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo ArteMatch">
+            <div class="texto-logo">
+                <h1>ArteMatch</h1>
+                <p>Conectando talento con oportunidades</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Cómo funciona</a>
+            <a href="#">Beneficios</a>
+        </nav>
+
+        <div class="acciones">
+            <button class="btn-login">Iniciar Sesión</button>
+            <button class="btn-unete">Únete Ahora</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard">
+
+            <div class="header">
+                <div class="header-text">
+                    <h1>Bienvenido, Artista</h1>
+                    <p>Gestiona tu obra y analiza tu rendimiento</p>
+                </div>
+                <button class="btn-primary">Publicar obra</button>
+            </div>
+
+            <div class="cards">
+
+                <div class="card card-red">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <p>Publicar Obra</p>
+                </div>
+
+                <div class="card card-blue">
+                    <i class="fa-solid fa-image"></i>
+                    <p>Mi galería</p>
+                </div>
+
+                <div class="card card-yellow">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <p>Estadísticas</p>
+                </div>
+
+                <div class="card card-gray">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Editar perfil</p>
+                </div>
+
+                <div class="card card-pink">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>Comunidades</p>
+                </div>
+
+            </div>
+            <hr class="separador">
+            <div class="metricas">
+                <div class="tarjeta">
+                    <p class="titulo">Vistas totales</p>
+                    <p class="valor"><strong>12,453</strong></p>
+                    <p class="crecimiento">↑ +12% este mes</p>
+                    <div class="icono"><i class="fa-regular fa-eye"></i></div>
+                </div>
+
+                <div class="tarjeta">
+                    <p class="titulo">Likes totales</p>
+                    <p class="valor"><strong>3,421</strong></p>
+                    <p class="crecimiento">↑ +8% este mes</p>
+                    <div class="icono"><i class="fa-regular fa-heart"></i></div>
+                </div>
+
+                <div class="tarjeta">
+                    <p class="titulo">Ventas totales</p>
+                    <p class="valor"><strong>156</strong></p>
+                    <p class="crecimiento">↑ +15% este mes</p>
+                    <div class="icono"><i class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+
+                <div class="tarjeta">
+                    <p class="titulo">Ingresos totales</p>
+                    <p class="valor"><strong>S/.87,640</strong></p>
+                    <p class="crecimiento">↑ +22% este mes</p>
+                    <div class="icono"><i class="fa-solid fa-dollar-sign"></i></div>
+                </div>
+            </div>
+            <section class="panel-estadisticas">
+
+                <div class="card-grafico doble">
+                    <h3>Rendimiento de ventas</h3>
+                    <p class="subtitulo">Ventas e ingresos de los últimos 6 meses</p>
+
+                    <div class="graficos-doble">
+                        <div class="grafico-item">
+                            <h4>Ventas</h4>
+                            <img src="imagenes/ventas.jpg" alt="Ventas" class="grafico">
+                        </div>
+
+                        <div class="grafico-item">
+                            <h4>Ingresos</h4>
+                            <img src="imagenes/ingresos.jpg" alt="Ingresos" class="grafico">
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="card-obras obras-recientes">
+                    <div class="obras-recientes-card">
+
+                        <h3>Obras recientes</h3>
+                        <p class="subtitulo">Tu contenido más reciente</p>
+
+                        <div class="obras-slider">
+
+                            <div class="obra-card">
+                                <img src="imagenes/abst-contemp.jpg" alt="Abstracción contemporánea">
+                                <h4>Abstracción contemporánea</h4>
+                                <div class="obra-metricas">
+                                    <span>👁️1205</span>
+                                    <span>❤ 234</span>
+                                    <span>💰 1,200</span>
+                                </div>
+                            </div>
+
+                            <div class="obra-card">
+                                <img src="imagenes/pais-sereno.jpg" alt="Paisaje sereno">
+                                <h4>Paisaje sereno</h4>
+                                <div class="obra-metricas">
+                                    <span>👁️892</span>
+                                    <span>❤ 189</span>
+                                    <span>💰 850</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <div class="card-perfil">
+                    <h3>Perfil</h3>
+
+                    <p><strong>100%</strong></p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:100%"></div>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>Seguidores: <strong>1,234</strong></p>
+                    </div>
+
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <p>Calificación: <strong>4.9</strong></p>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-hashtag"></i>
+                        <p>Ranking: <strong>42</strong></p>
+                    </div>
+                </div>
+
+                <div class="card-objetivos">
+                    <h3>Objetivos del mes</h3>
+
+                    <p class="muted">Ventas (31 / 40)</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:78%"></div>
+                    </div>
+
+                    <p class="muted">Vistas (12.4k / 15k)</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:83%"></div>
+                    </div>
+
+                    <p class="muted">Seguidores (1.2k / 2k)</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:62%"></div>
+                    </div>
+                </div>
+                <section class="card-obras ventas-tipo-wrapper">
+                    <div class="ventas-tipo-card">
+
+                        <h3>Distribución de ventas</h3>
+                        <p class="subtitulo">Ventas por tipo de obra</p>
+
+                        <img src="imagenes/ventas-tipo-obras.jpg" alt="Ventas por tipo de obra" class="ventas-tipo-img">
+
+                    </div>
+                </section>
+                <div class="card-expo">
+                    <i class="fa-regular fa-calendar"></i>
+                    <h3>Próxima exposición</h3>
+                    <p>Galería Nacional de Arte Moderno</p>
+                    <p>15 - 30 de Diciembre, 2024</p>
+                    <button>Ver detalles</button>
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col marca">
+                <div class="footer-logo">
+                    <img src="imagenes/logo.jpg" alt="Logo ArteMatch">
+                    <div>
+                        <h3 class="logo">ArteMatch</h3>
+                        <p class="slogan">Conectando talento</p>
+                    </div>
+                </div>
+                <p class="descripcion">La plataforma que une artistas con oportunidades únicas</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Artistas</h4>
+                <ul>
+                    <li><a href="#">Crear Portafolio</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Clientes</h4>
+                <ul>
+                    <li><a href="#">Buscar Artistas</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#">Categorías</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-copy">
+            <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
