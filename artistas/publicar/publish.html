@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish</title>
+    <link rel="stylesheet" href="publish.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo ArteMatch">
+            <div class="texto-logo">
+                <h1>ArteMatch</h1>
+                <p>Conectando talento con oportunidades</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Cómo funciona</a>
+            <a href="#">Beneficios</a>
+        </nav>
+
+        <div class="acciones">
+            <button class="btn-login">Iniciar Sesión</button>
+            <button class="btn-unete">Únete Ahora</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="seccion-publicar">
+            <h1><strong>Publicar nueva obra</strong></h1>
+            <p>Comparte tu arte con la comunidad</p>
+        </div>
+        <div class="contenedor">
+            <h2>Archivos multimedia</h2>
+            <p class="subtexto">Sube imagenes o videos de tu obra</p>
+
+            <div class="subir-obra">
+                <div class="iconos">
+                    <div class="icon icon-img">🖼️</div>
+                    <div class="icon icon-video">📹</div>
+                </div>
+                <p>Arrastra archivos aquí o haz clic para seleccionar</p>
+                <p style="color:#777; font-size:14px;">
+                    Imágenes: JPG, PNG, WEBP (máx. 10MB por archivo)<br>
+                    Videos: MP4, MOV (máx. 100MB)
+                </p>
+                <label class="boton">
+                    Seleccionar archivos
+                    <input type="file" hidden multiple>
+                </label>
+            </div>
+            <div class="formatos">
+                <strong>Formatos soportados</strong>
+                <p>Para obtener los mejores resultados, usa imágenes de alta resolución (mínimo 1920×1080px) y videos en
+                    formato MP4. Los archivos se optimizarán automáticamente para web.
+                </p>
+            </div>
+        </div>
+        <div class="contenedor-detalles">
+            <h2>Detalles de la obra</h2>
+            <p class="subtexto">Informacion básica sobre tu creación</p>
+            <div>
+                <Label>Titulo de obra *</Label>
+                <Input id="title" placeholder="Ej: Abstracción contemporánea"></Input>
+            </div>
+            <div>
+                <Label>Descripcion *</Label>
+                <Input id="description" placeholder="Describe tu obra, inspiración, técnica utilizada..."></Input>
+                <p>Mínimo 50 caracteres, máximo 500</p>
+            </div>
+            <div>
+                <Label>Tecnica *</Label>
+                <Select>
+                    <option value="Óleo">Óleo</option>
+                    <option value="Acuarela">Acuarela</option>
+                    <option value="Acrílico">Acrílico</option>
+                    <option value="Fotografía">Fotografía</option>
+                    <option value="Pastel">Pastel</option>
+                </Select>
+            </div>
+            <div>
+                <Label>Año de creacion</Label>
+                <Input id="year" type="number" placeholder="2025"></Input>
+            </div>
+            <div>
+                <Label>Ancho (cm)</Label>
+                <Input id="width" type="number" placeholder="80"></Input>
+            </div>
+            <div>
+                <Label>Alto (cm)</Label>
+                <Input id="height" type="number" placeholder="100"></Input>
+            </div>
+            <div>
+                <Label>Profundidad (cm)</Label>
+                <Input id="depth" type="number" placeholder="5"></Input>
+            </div>
+            <div>
+                <Label>Precio S/.</Label>
+                <Input id="precio" type="number" placeholder="1200"></Input>
+                <p>Deja vacío si la obra no está a la venta</p>
+            </div>
+        </div>
+        <div class="contenedor-etiquetas">
+            <h2>Etiquetas</h2>
+            <p class="subtexto">Ayuda a que otros descubran tu obra</p>
+
+            <div>
+                <label>Etiquetas personalizadas</label>
+                <br><br>
+                <input id="tags" placeholder="Escribe una etiqueta y presiona Enter" />
+                <p>Máximo 10 etiquetas</p>
+
+                <div id="chips-container" class="chips-container"></div>
+            </div>
+
+            <div>
+                <p>Etiquetas sugeridas</p>
+
+                <div class="chips-sugeridas">
+                    <span class="chip sugerida">Arte moderno</span>
+                    <span class="chip sugerida">Acrílico</span>
+                    <span class="chip sugerida">Minimalismo</span>
+                    <span class="chip sugerida">Retrato</span>
+                    <span class="chip sugerida">Abstracto</span>
+                    <span class="chip sugerida">Realismo</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="acciones-final">
+            <button class="btn-borrador">Guardar como borrador</button>
+            <button class="btn-publicar">Publicar obra</button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col marca">
+                <div class="footer-logo">
+                    <img src="imagenes/logo.jpg" alt="Logo ArteMatch">
+                    <div>
+                        <h3 class="logo">ArteMatch</h3>
+                        <p class="slogan">Conectando talento</p>
+                    </div>
+                </div>
+                <p class="descripcion">La plataforma que une artistas con oportunidades únicas</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Artistas</h4>
+                <ul>
+                    <li><a href="#">Crear Portafolio</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Clientes</h4>
+                <ul>
+                    <li><a href="#">Buscar Artistas</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#">Categorías</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-copy">
+            <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
