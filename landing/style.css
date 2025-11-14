@@ -1,4 +1,8 @@
 /*HEADER*/
+html {
+    font-family: 48px;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', 'Arial', sans-serif;
@@ -125,7 +129,7 @@ body {
 .hero-texto p {
     font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: #475569;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 40px;
 }
@@ -133,6 +137,18 @@ body {
 .hero-botones {
     display: flex;
     gap: 20px;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    width: 22vw;
+    margin-top: 2rem;
+}
+
+.datos p {
+    margin: 0;
+    font-size: 0.8rem;
 }
 
 .btn-primario {
@@ -476,7 +492,7 @@ body {
     font-weight: 500;
 }
 
-.icono {
+.iconos {
     width: 70px;
     height: 70px;
     margin-bottom: 1px;
@@ -512,6 +528,256 @@ body {
 .img-container img:hover {
     transform: scale(1.1);
 }
+
+.beneficiarios {
+    background-color: #fafbfc;
+    font-family: 'Caudex', serif;
+}
+
+.beneficios {
+    text-align: center;
+    font-family: 'Caudex', serif;
+    padding: 0.1rem;
+}
+
+.beneficios h2 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin: 0;
+    margin-top: 4rem;
+
+}
+
+.beneficios p {
+    font-size: 1.5rem;
+    color: #64748b;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.beneficios-clientes-artistas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 1rem 10rem 6rem 10rem;
+    margin-top: 2rem;
+}
+
+.card {
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border: 1px solid #64748b;
+    box-shadow: 0 0 30px #dbdee0;
+}
+
+.card .fa-solid {
+    padding: 0.6rem 0.4rem;
+    background-color: #d2dded;
+    color: #47576e;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.card:hover .fa-solid {
+    background-color: #47576e;
+    color: #ffffff;
+    padding: 0.7rem 0.5rem;
+}
+
+.icono {
+    background: #ffe9df;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #e07a4b;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+}
+
+.card p {
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.testimonios {
+    text-align: center;
+    margin: 60px 0 100px 0;
+}
+
+
+.testimonios h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-family: 'Caudex', serif;
+}
+
+.testimonios .sub {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.test-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.test-card {
+    width: 330px;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 2px solid transparent;
+    transition: .3s ease;
+    text-align: left;
+}
+
+.test-card:hover {
+    border-color: #47576e;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.estrellas {
+    color: #f7c531;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.test-card .texto {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.user img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.user h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #111;
+}
+
+.user span {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+.dudas {
+    text-align: center;
+    padding: 40px 0 70px 0;
+    background-color: #fafbfc;
+
+}
+
+.dudas .tag {
+    background: #e6f7f3;
+    padding: 6px 16px;
+    border-radius: 20px;
+    color: #42a58a;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.dudas h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-family: 'Caudex', serif;
+}
+
+.dudas .sub {
+    color: #47576e;
+    font-size: 16px;
+    margin: 30px 0 50px 0;
+}
+
+.dudas-container {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+details {
+    border-bottom: 2px solid #ddd;
+    padding: 18px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+details:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::after {
+    content: "⌄";
+    font-size: 22px;
+    transition: transform .3s ease;
+}
+
+/* Rotar flecha al abrir */
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+details p {
+    padding: 10px 0 15px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fade .3s ease;
+}
+
+
 
 
 .title-image {
@@ -594,10 +860,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
-
 }
-
 
 .listo-para-boton-registro:hover {
     background-color: #7a9bb1;

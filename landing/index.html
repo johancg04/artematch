@@ -28,23 +28,12 @@
 
         <nav class="menu">
             <a href="#">Cómo funciona</a>
-            <a href="#">Para Artistas</a>
-            <a href="#">Para Clientes</a>
+            <a href="#">Beneficios</a>
         </nav>
 
         <div class="acciones">
-            <button class="btn-login" id="btnLogin">Iniciar Sesión</button>
-            <script>
-                document.getElementById("btnLogin").addEventListener("click", function () {
-                    window.location.href = "/registro/index.html";
-                });
-            </script>
-            <button class="btn-unete" id="btnUnirse">Únete Ahora</button>
-            <script>
-                document.getElementById("btnUnirse").addEventListener("click", function () {
-                    window.location.href = "/registro/index.html";
-                });
-            </script>
+            <button class="btn-login">Iniciar Sesión</button>
+            <button class="btn-unete">Únete Ahora</button>
         </div>
     </header>
 
@@ -54,7 +43,7 @@
                 Conecta tu talento con
                 <span>oportunidades únicas</span>
             </h1>
-            <p>
+            <p class="parrafo">
                 ArteMatch une a artistas independientes con clientes que buscan servicios creativos.
                 Descubre talento excepcional o muestra tu arte al mundo.
             </p>
@@ -62,11 +51,17 @@
                 <button class="btn-primario">Soy Artista</button>
                 <button class="btn-secundario">Busco un Artista</button>
             </div>
+            <div class="datos">
+                <p>+5,000 arrtistas</p>
+                <p>+50,000 obras</p>
+                <p>100% seguro</p>
+            </div>
         </div>
 
         <div class="hero-imagen">
             <img src="imagenes/img1.jpg" alt="Imagen de ArteMatch">
         </div>
+
     </main>
 
     <section class="section">
@@ -167,25 +162,25 @@
 
         <div class="list-container">
             <div class="por_que-container">
-                <img class="icono" src="imagenes/logo-seguridad.jpg" alt="logo-seguridad">
+                <img class="iconos" src="imagenes/logo-seguridad.jpg" alt="logo-seguridad">
                 <h3>Conexiones confiables</h3>
                 <p>Perfiles verificados y sistema de<br>reseñas</p>
             </div>
 
             <div class="por_que-container">
-                <img class="icono" src="imagenes/logo-impulso.jpg" alt="logo-impulso">
+                <img class="iconos" src="imagenes/logo-impulso.jpg" alt="logo-impulso">
                 <h3>Crece tu negocio</h3>
                 <p>Aumenta tu visibilidad y encuentra más <br>clientes</p>
             </div>
 
             <div class="por_que-container">
-                <img class="icono" src="imagenes/logo-comunidad.jpg" alt="logo-comunidad">
+                <img class="iconos" src="imagenes/logo-comunidad.jpg" alt="logo-comunidad">
                 <h3>Comunidad activa</h3>
                 <p>Miles de artistas y clientes <br>conectándose cada día</p>
             </div>
 
             <div class="por_que-container">
-                <img class="icono" src="imagenes/logo-estrella.jpg" alt="logo-estrella">
+                <img class="iconos" src="imagenes/logo-estrella.jpg" alt="logo-estrella">
                 <h3>Fácil de usar</h3>
                 <p>Interfaz intuitiva diseñada para <br>creativos</p>
             </div>
@@ -208,6 +203,142 @@
         </div>
 
     </section>
+
+    <section class="beneficiarios">
+        <div class="beneficios">
+            <h2>Beneficios</h2>
+            <p>Beneficios para artistas como para clientes</p>
+        </div>
+        <div class="beneficios-clientes-artistas">
+            <div class="card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Alcance global</h3>
+                <p>Tu arte visible para miles de potenciales compradores en todo el mundo.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Estadísticas detalladas</h3>
+                <p>Analiza visitas, likes, ventas y tendencias para optimizar tu estrategia.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Galería profesional</h3>
+                <p>Muestra tu portfolio con calidad de galería. Imágenes HD y videos.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-message"></i>
+                <h3>Comunicación directa</h3>
+                <p>Chat integrado para negociar comisiones y responder preguntas.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Pagos seguros</h3>
+                <p>Recibe tus pagos de forma rápida y segura. Sin sorpresas.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Promoción inteligente</h3>
+                <p>IA que recomienda tu arte a los clientes perfectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <p class="sub">Miles de artistas y coleccionistas confían en ArteMatch</p>
+        <div class="test-container">
+            <div class="test-card">
+                <div class="estrellas">★★★★★</div>
+                <p class="texto">
+                    "ArteMatch ha transformado mi forma de descubrir arte.
+                    He encontrado piezas únicas de artistas emergentes que jamás habría conocido de otra manera."
+                </p>
+                <div class="user">
+                    <img src="imagenes/perfil2.png" alt="Laura">
+                    <div>
+                        <h4>Laura Sánchez</h4>
+                        <span>Coleccionista de arte</span>
+                    </div>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="estrellas">★★★★★</div>
+                <p class="texto">
+                    "Como artista, esta plataforma me ha permitido alcanzar una audiencia global.
+                    Las ventas han aumentado un 300% desde que me uní."
+                </p>
+                <div class="user">
+                    <img src="imagenes/perfil1.png" alt="Pablo">
+                    <div>
+                        <h4>Pablo Fernández</h4>
+                        <span>Artista profesional</span>
+                    </div>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="estrellas">★★★★★</div>
+                <p class="texto">
+                    "La mejor plataforma para conectar con nuevos talentos.
+                    La calidad de los artistas y la facilidad de uso son incomparables."
+                </p>
+                <div class="user">
+                    <img src="imagenes/perfil3.png" alt="Isabel">
+                    <div>
+                        <h4>Isabel Torres</h4>
+                        <span>Galerista</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dudas">
+        <h2>¿Tienes dudas?</h2>
+        <p class="sub">Aquí encontrarás respuestas a las preguntas más comunes</p>
+        <div class="dudas-container">
+
+            <details>
+                <summary>¿Cómo funciona el proceso de compra?</summary>
+                <p>El proceso es simple y seguro. Selecciona la obra que te interesa, añádela al carrito y procede al
+                    pago. Usamos sistemas de pago seguros con encriptación SSL. Una vez confirmado el pago, el artista
+                    prepara el envío y recibes un código de seguimiento.</p>
+            </details>
+
+            <details>
+                <summary>¿Qué comisión cobra ArteMatch?</summary>
+                <p>ArteMatch cobra una comisión del 5% sobre cada venta. Esta comisión cubre los costes de la
+                    plataforma, procesamiento de pagos, soporte al cliente y marketing para promocionar a nuestros
+                    artistas.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo verifican la autenticidad de las obras?</summary>
+                <p>Cada artista pasa por un proceso de verificación de identidad. Todas las obras incluyen certificado
+                    de autenticidad digital. Además, nuestro equipo revisa cada publicación para asegurar que cumple con
+                    nuestros estándares de calidad.</p>
+            </details>
+
+            <details>
+                <summary>¿Puedo devolver una obra si no me gusta?</summary>
+                <p>Sí, ofrecemos una garantía de devolución de 2 días. Si la obra no cumple tus expectativas, puedes
+                    devolverla en su estado original y recibir un reembolso completo. Los gastos de envío de devolución
+                    corren por cuenta del comprador.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo puedo contactar con un artista?</summary>
+                <p>Una vez registrado, puedes enviar mensajes directos a cualquier artista a través de nuestro sistema
+                    de mensajería integrado. También puedes solicitar obras personalizadas o hacer preguntas sobre
+                    técnicas y dimensiones.</p>
+            </details>
+
+        </div>
+    </section>
+
 
     <section class="listo-para">
         <h2>¿Listo para comenzar?</h2>
@@ -265,7 +396,6 @@
             <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
         </div>
     </footer>
-
 </body>
 
 </html>
