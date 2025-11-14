@@ -44,7 +44,12 @@
                     <h1>Bienvenido, Artista</h1>
                     <p>Gestiona tu obra y analiza tu rendimiento</p>
                 </div>
-                <button class="btn-primary">Publicar obra</button>
+                <button class="btn-primary" id="btnPublicar">Publicar obra</button>
+                <script>
+                    document.getElementById("btnPublicar").onclick = function () {
+                        window.location.href = "/artistas/publicar/publish.html";
+                    }
+                </script>
             </div>
 
             <div class="cards">
