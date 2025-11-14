@@ -44,21 +44,21 @@
                     <div class="box box-correo">
                         <form class="formulario email-correo">
                             <i class="icono fa fa-envelope"></i>
-                            <input type="email" placeholder="ejemplo@hotmail.com">
+                            <input type="email" id="login-correo" placeholder="ejemplo@hotmail.com">
                         </form>
                     </div>
                     <div class="contraseña">
-                        <label>Contrseña</label>
-                        <a href="https://www.youtube.com/watch?v=FC86X9NeLHY">¿Olvidaste tu contraseña?</a>
+                        <label>Contraseña</label>
+                        <a href="">¿Olvidaste tu contraseña?</a>
                     </div>
                     <div class="box box-contraseña">
                         <form class="formulario email-password">
                             <i class="icono fa fa-lock"></i>
-                            <input type="password" placeholder="••••••••">
+                            <input type="password" id="login-pass" placeholder="••••••••">
                         </form>
                     </div>
                     <div class="boton-iniciarSesion">
-                        <button class="boton-iniciar-boton" type="submit">Iniciar Sesión</button>
+                        <button class="boton-iniciar-boton" id="btn-ingresar" type="submit">Iniciar Sesión</button>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                     <div class="box box-nombre">
                         <form class="formulario">
                             <i class="icono fa fa-user"></i>
-                            <input type="email" placeholder="Tu nombre">
+                            <input type="text" id="registro-nombre" placeholder="Tu nombre">
                         </form>
                     </div>
 
@@ -112,17 +112,33 @@
                     <div class="box box-correo">
                         <form class="formulario email-correo">
                             <i class="icono fa fa-envelope"></i>
-                            <input type="email" placeholder="ejemplo@hotmail.com">
+                            <input type="email" id="registro-correo" placeholder="ejemplo@hotmail.com">
                         </form>
                     </div>
 
+                    <div class="rol">
+                        <label>Tipo de usuario</label>
+                    </div>
+
+                    <div class="box box-rol">
+                        <div class="formulario">
+                            <i class="icono fa fa-user-tag"></i>
+                            <select id="registro-rol">
+                                <option value="artista">Artista</option>
+                                <option value="cliente">Cliente</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
                     <div class="contraseña">
-                        <label>Contrseña</label>
+                        <label>Contraseña</label>
                     </div>
                     <div class="box box-contraseña">
                         <form class="formulario email-password">
                             <i class="icono fa fa-lock"></i>
-                            <input type="password" placeholder="••••••••">
+                            <input type="password" id="registro-pass" placeholder="••••••••">
                         </form>
                     </div>
 
@@ -132,14 +148,14 @@
                     <div class="box box-contraseña">
                         <form class="formulario email-password">
                             <i class="icono fa fa-lock"></i>
-                            <input type="password" placeholder="••••••••">
+                            <input type="password" id="registro-pass2" placeholder="••••••••">
                         </form>
                     </div>
 
                     <div class="boton-crearCuenta">
-                        <button class="boton-crear-boton" type="submit">Crear cuenta</button>
+                        <button class="boton-crear-boton" id="btn-crear" type="button">Crear cuenta</button>
                         <div class="terminos-condiciones">
-                            <p>Al registrarte, aceptas nuestros <a href="www.youtube.com">términos y condiciones</a></p>
+                            <p>Al registrarte, aceptas nuestros <a href="">términos y condiciones</a></p>
                         </div>
                     </div>
                 </div>

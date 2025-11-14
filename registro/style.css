@@ -302,3 +302,43 @@ label {
         margin-top: 5vh;
     }
 }
+
+.rol {
+    margin-top: 0.7rem;
+}
+
+.box-rol select {
+    width: 94.6%;
+    border-radius: 7px;
+    padding: 0.38rem 0.38rem 0.38rem 1.25rem;
+    border: 1px solid #e1e1e1;
+    margin-top: 0.3rem;
+    font-size: 0.37rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #292f3d;
+    appearance: none;
+    outline: none;
+}
+
+.box-rol select:focus {
+    outline: 3px solid #8fa3c0;
+    outline-offset: 2px;
+}
+
+.box-rol .formulario {
+    position: relative;
+}
+
+.box-rol .icono {
+    position: absolute;
+    left: 0.68rem;
+    top: 52%;
+    transform: translateY(-50%);
+    color: #8fa3c0;
+    font-size: 0.5rem;
+}
+
+.box-rol .formulario select {
+    padding-left: 1.5rem;
+}

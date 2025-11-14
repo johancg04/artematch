@@ -32,8 +32,18 @@
         </nav>
 
         <div class="acciones">
-            <button class="btn-login">Iniciar Sesión</button>
-            <button class="btn-unete">Únete Ahora</button>
+            <button class="btn-login" id="btnLogin">Iniciar Sesión</button>
+            <script>
+                document.getElementById("btnLogin").addEventListener("click", function () {
+                    window.location.href = "/registro/index.html";
+                });
+            </script>
+            <button class="btn-unete" id="btnUnete">Únete Ahora</button>
+            <script>
+                document.getElementById("btnUnete").addEventListener("click", function () {
+                    window.location.href = "/registro/index.html";
+                });
+            </script>
         </div>
     </header>
 
@@ -48,8 +58,8 @@
                 Descubre talento excepcional o muestra tu arte al mundo.
             </p>
             <div class="hero-botones">
-                <button class="btn-primario">Soy Artista</button>
-                <button class="btn-secundario">Busco un Artista</button>
+                <button class="btn-primario" id="btnRegistrar">Soy Artista</button>
+                <button class="btn-secundario" id="buscarArtista">Busco un Artista</button>
             </div>
             <div class="datos">
                 <p>+5,000 arrtistas</p>
@@ -344,8 +354,18 @@
         <h2>¿Listo para comenzar?</h2>
         <p>Únete a cientos de artistas y clientes que ya están conectando y creando <br>proyectos increíbles</p>
         <div class="listo-para-botones">
-            <button class="listo-para-boton-registro">Registrarse como Artista</button>
-            <button class="listo-para-boton-Buscar">Buscar Artista</button>
+            <button class="listo-para-boton-registro" id="btnRegistrar">Registrarse como Artista</button>
+            <script>
+                document.getElementById("btnRegistrar").addEventListener("click", function () {
+                    window.location.href = "/registro/index.html";
+                });
+            </script>
+            <button class="listo-para-boton-Buscar" id="buscarArtista">Buscar Artista</button>
+            <script>
+                document.getElementById("buscarArtista").addEventListener("click", function () {
+                    window.location.href = "/registro/index.html";
+                });
+            </script>
         </div>
     </section>
 

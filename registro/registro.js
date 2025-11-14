@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const loginSection = document.getElementById('login');
     const registroSection = document.getElementById('registro');
 
-    // Botones dentro del login
     const btnLogin = document.getElementById('btn-login');
     const btnRegistro = document.getElementById('btn-registro');
-
-    // Botones dentro del registro
     const btnLogin2 = document.getElementById('btn-login-2');
     const btnRegistro2 = document.getElementById('btn-registro-2');
 
-    // Función para ir al registro
+    const PASSWORD_DEMO = "demo123";
+
     function irARegistro() {
         loginSection.classList.remove('activa');
         registroSection.classList.add('activa');
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnRegistro.classList.add('activo');
     }
 
-    // Función para ir al login
     function irALogin() {
         registroSection.classList.remove('activa');
         loginSection.classList.add('activa');
@@ -26,7 +24,75 @@ document.addEventListener('DOMContentLoaded', () => {
         btnLogin.classList.add('activo');
     }
 
-    // Eventos
     btnRegistro.addEventListener('click', irARegistro);
+    btnLogin.addEventListener('click', irALogin);
+    btnRegistro2.addEventListener('click', irARegistro);
     btnLogin2.addEventListener('click', irALogin);
+
+    //REGISTRO
+    const btnCrear = document.getElementById('btn-crear');
+    const correoReg = document.getElementById('registro-correo');
+    const passReg = document.getElementById('registro-pass');
+
+    btnCrear.addEventListener('click', () => {
+
+        const email = correoReg.value.trim().toLowerCase();
+        const pass = passReg.value.trim();
+
+        if (email === "" || pass === "") {
+            alert("Completa todos los campos.");
+            return;
+        }
+
+        if (pass !== PASSWORD_DEMO) {
+            alert("Contraseña incorrecta. Usa la demo: demo123");
+            return;
+        }
+
+        if (email === "artista@artematch.com") {
+            window.location.href = "/artistas/dashboard/dashboard.html";
+            return;
+        }
+
+        if (email === "cliente@artematch.com") {
+            window.location.href = "/clientes/descubrir/duscubrir.html";
+            return;
+        }
+
+        alert("Usuario no válido.");
+    });
+
+    //LOGIN 
+    const btnIngresar = document.getElementById('btn-ingresar');
+    const correoLog = document.getElementById('login-correo');
+    const passLog = document.getElementById('login-pass');
+
+    btnIngresar.addEventListener('click', () => {
+
+        const email = correoLog.value.trim().toLowerCase();
+        const pass = passLog.value.trim();
+
+        if (email === "" || pass === "") {
+            alert("Completa todos los campos.");
+            return;
+        }
+
+        if (pass !== PASSWORD_DEMO) {
+            alert("Contraseña incorrecta. Usa la demo: demo123");
+            return;
+        }
+
+        if (email === "artista@artematch.com") {
+            window.location.href = "/artistas/dashboard/dashboard.html";
+            return;
+        }
+
+        if (email === "cliente@artematch.com") {
+            window.location.href = "/clientes/descubrir/duscubrir.html";
+            return;
+        }
+
+        alert("Usuario no válido.");
+    });
+
 });
