@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("Usuario no válido.");
     });
 
-    //LOGIN 
+    //LOGIN
     const btnIngresar = document.getElementById('btn-ingresar');
     const correoLog = document.getElementById('login-correo');
     const passLog = document.getElementById('login-pass');

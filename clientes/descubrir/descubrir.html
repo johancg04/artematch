@@ -27,13 +27,8 @@
         </div>
 
         <nav class="menu">
-            <a href="#">Descubrir</a>
-            <script>
-                document.getElementById("irADescubrir").onclick = function () {
-                    window.location.href = "descubrir.html";
-                }
-            </script>
-            <a href="#">Artistas</a>
+            <a href="/clientes/descubrir/descubrir.html">Descubrir</a>
+            <a href="/clientes/comunidad/comunidad.html">Comunidad</a>
         </nav>
 
         <div class="usuario">
@@ -47,7 +42,7 @@
                     <li><a href="#">Mi Perfil</a></li>
                     <li><a href="#">Pedidos</a></li>
                     <li><a href="#">Mensajes</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
+                    <li><a href="/landing/index.html">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -145,10 +140,15 @@
                             <div class="precio-btn">
                                 <span class="precio">S/ 1,200</span>
                                 <i class="fav fa-solid fa-heart"></i>
-                                <button class="btn-comprar">
+                                <button class="btn-comprar" id="btnComprar">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                     Comprar
                                 </button>
+                                <script>
+                                    document.getElementById("btnComprar").onclick = function () {
+                                        window.location.href = "/clientes/ver-obra/verObra.html";
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -297,10 +297,15 @@
                         <div class="precio-btn">
                             <span class="precio">S/ 1,200</span>
                             <i class="fav fa-solid fa-heart"></i>
-                            <button class="btn-comprar">
+                            <button class="btn-comprar" id="comprar">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 Comprar
                             </button>
+                            <script>
+                                document.getElementById("comprar").onclick = function () {
+                                    window.location.href = "/clientes/ver-obra/verObra.html";
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -379,10 +384,15 @@
                         <div class="precio-btn">
                             <span class="precio">S/ 1,200</span>
                             <i class="fav fa-solid fa-heart"></i>
-                            <button class="btn-comprar">
+                            <button class="btn-comprar" id="botComp">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 Comprar
                             </button>
+                            <script>
+                                document.getElementById("botComp").onclick = function () {
+                                    window.location.href = "/clientes/ver-obra/verObra.html";
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
