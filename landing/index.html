@@ -58,8 +58,18 @@
                 Descubre talento excepcional o muestra tu arte al mundo.
             </p>
             <div class="hero-botones">
-                <button class="btn-primario" id="btnRegistrar">Soy Artista</button>
-                <button class="btn-secundario" id="buscarArtista">Busco un Artista</button>
+                <button class="btn-primario" id="btnSoyArtista">Soy Artista</button>
+                <script>
+                    document.getElementById("btnSoyArtista").addEventListener("click", function () {
+                        window.location.href = "/registro/index.html";
+                    });
+                </script>
+                <button class="btn-secundario" id="btnBuscoArtista">Busco un Artista</button>
+                <script>
+                    document.getElementById("btnBuscoArtista").addEventListener("click", function () {
+                        window.location.href = "/registro/index.html";
+                    });
+                </script>
             </div>
             <div class="datos">
                 <p>+5,000 arrtistas</p>

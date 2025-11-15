@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/artistas/perfil/perfil.css">
     <script defer src="/artistas/perfil/script.js"></script>
     <title>ArteMatch</title>
@@ -24,13 +28,13 @@
             <a href="#" id="irDashBoard">Dashboard</a>
             <script>
                 document.getElementById("irDashBoard").onclick = function () {
-                    window.location.href = "dashboard.html";
+                    window.location.href = "/artistas/dashboard/dashboard.html";
                 }
             </script>
             <a href="#" id="irPerfil">Mi perfil</a>
             <script>
                 document.getElementById("irPerfil").onclick = function () {
-                    window.location.href = "/artistas/perfil/";
+                    window.location.href = "/artistas/perfil/perfil.html";
                 }
             </script>
         </nav>
@@ -43,9 +47,9 @@
 
             <div class="dropdown">
                 <ul>
-                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="/artistas/perfil/perfil.html">Mi Perfil</a></li>
                     <li><a href="#">Configuración</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
+                    <li><a href="/landing/index.html">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>

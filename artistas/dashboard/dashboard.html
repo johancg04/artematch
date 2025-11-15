@@ -35,7 +35,7 @@
             <a href="#" id="irPerfil">Mi perfil</a>
             <script>
                 document.getElementById("irPerfil").onclick = function () {
-                    window.location.href = "/artistas/perfil/";
+                    window.location.href = "/artistas/perfil/perfil.html";
                 }
             </script>
         </nav>
@@ -48,9 +48,9 @@
 
             <div class="dropdown">
                 <ul>
-                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="/artistas/perfil/perfil.html">Mi Perfil</a></li>
                     <li><a href="#">Configuración</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
+                    <li><a href="/landing/index.html">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -74,15 +74,25 @@
 
             <div class="cards">
 
-                <div class="card card-red">
+                <div class="card card-red" id="btnPub">
                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     <p>Publicar Obra</p>
                 </div>
+                <script>
+                    document.getElementById("btnPub").onclick = function () {
+                        window.location.href = "/artistas/publicar/publish.html";
+                    }
+                </script>
 
-                <div class="card card-blue">
+                <div class="card card-blue" id="miGaleria">
                     <i class="fa-solid fa-image"></i>
                     <p>Mi galería</p>
                 </div>
+                <script>
+                    document.getElementById("miGaleria").onclick = function () {
+                        window.location.href = "/artistas/perfil/perfil.html";
+                    }
+                </script>
 
                 <div class="card card-yellow">
                     <i class="fa-solid fa-chart-column"></i>
