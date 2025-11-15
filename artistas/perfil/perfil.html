@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/artistas/perfil/perfil.css">
+    <script defer src="/artistas/perfil/script.js"></script>
+    <title>ArteMatch</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="/artistas/perfil/imagenes/logo.jpg" alt="Logo ArteMatch">
+            <div class="texto-logo">
+                <h1>ArteMatch</h1>
+                <p>Conectando talento con oportunidades</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#" id="irDashBoard">Dashboard</a>
+            <script>
+                document.getElementById("irDashBoard").onclick = function () {
+                    window.location.href = "dashboard.html";
+                }
+            </script>
+            <a href="#" id="irPerfil">Mi perfil</a>
+            <script>
+                document.getElementById("irPerfil").onclick = function () {
+                    window.location.href = "/artistas/perfil/";
+                }
+            </script>
+        </nav>
+
+        <div class="usuario">
+            <div class="usuario-info">
+                <i class="fa-regular fa-user"></i>
+                <span>Artista</span>
+            </div>
+
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="informacion-artista">
+
+        <div class="layout-artista">
+
+            <div class="foto-artista">
+                <img src="/artistas/perfil/imagenes/imagen artista.png" alt="Imagen de artista">
+            </div>
+
+            <div class="contenedor-info">
+                <h1>María García</h1>
+
+                <div class="ubi-cal">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot icono"></i>
+                        <p>Barcelona, España</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-regular fa-calendar icono"></i>
+                        <p>Miembro desde 2021</p>
+                    </div>
+
+                </div>
+
+                <div class="categorias">
+                    <div class="caja-categoria">Óleo</div>
+                    <div class="caja-categoria">Abstracto</div>
+                    <div class="caja-categoria">Contemporáneo</div>
+                    <div class="caja-categoria">Texturas</div>
+                </div>
+
+                <div class="descripcion">
+                    <p>Artista abstracta especializada en texturas y colores vibrantes. Mi trabajo explora la
+                        intersección entre la emoción y la forma, creando piezas que invitan a la contemplación. Con más
+                        de 15 años de experiencia, mi arte ha sido exhibido en galerías de España, Francia e Italia.</p>
+                </div>
+
+                <div class="stats">
+                    <div class="info-item">
+                        <i class="fa-solid fa-star icono-star"></i>
+                        <p><span>4.9</span> (87 reseñas)</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-regular fa-heart icono"></i>
+                        <p><span>1234</span> seguidores</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-arrow-trend-up icono"></i>
+                        <p><span>156</span> ventas</p>
+                    </div>
+
+                </div>
+
+                <div class="contenedor-opciones-info">
+                    <div id="seguir-artista" class="info-item">
+                        <i class="fa-regular fa-heart icono-opciones"></i>
+                        <p>Seguir artista</p>
+                    </div>
+
+                    <div id="enviar-mensaje" class="info-item">
+                        <i class="fa-regular fa-comment icono"></i>
+                        <p>Enviar mensaje</p>
+                    </div>
+
+                    <div id="compartir" class="info-item">
+                        <i class="fa-solid fa-share-nodes icono"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="articulos">
+
+        <div class="layout-obras">
+            <div class="contenedor-botones">
+                <button id="btn-galería" class="boton activo">Galería</button>
+                <button id="btn-reseñas" class="boton">Reseñas</button>
+                <button id="btn-sobremi" class="boton">Sobre mí</button>
+            </div>
+
+            <div id="seccion-galeria" class="seccion">
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/artistas/perfil/imagenes/cuadro-abstracto.jpg" alt="cuadro abstracto de los simpson">
+                    </div>
+                    <div class="card-body">
+                        <h2>Abstracción Contemporánea</h2>
+                        <p>por María García</p>
+                    </div>
+                    <div class="card-footer">
+                        <h2>€1200</h2>
+
+                        <div class="card-button-footer">
+                            <div class="info-item">
+                                <i class="fa-regular fa-heart icono"></i>
+                            </div>
+
+                            <div id="btn-comprar">
+                                <i class="fa-solid fa-cart-shopping icono-card-footer"></i>
+                                <p>Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/artistas/perfil/imagenes/pintura.jpg" alt="simfonia de colores">
+                    </div>
+                    <div class="card-body">
+                        <h2>Simfonía de colores</h2>
+                        <p>por María García</p>
+                    </div>
+                    <div class="card-footer">
+                        <h2>€950</h2>
+
+                        <div class="card-button-footer">
+                            <div class="info-item">
+                                <i class="fa-regular fa-heart icono"></i>
+                            </div>
+
+                            <div id="btn-comprar">
+                                <i class="fa-solid fa-cart-shopping icono-card-footer"></i>
+                                <p>Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/artistas/perfil/imagenes/pintura2.jpeg" alt="textura vibrante">
+                    </div>
+                    <div class="card-body">
+                        <h2>Simfonía de colores</h2>
+                        <p>por María García</p>
+                    </div>
+                    <div class="card-footer">
+                        <h2>€1450</h2>
+
+                        <div class="card-button-footer">
+                            <div class="info-item">
+                                <i class="fa-regular fa-heart icono"></i>
+                            </div>
+
+                            <div id="btn-comprar">
+                                <i class="fa-solid fa-cart-shopping icono-card-footer"></i>
+                                <p>Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/artistas/perfil/imagenes/expresionismo-franz-marc.jpg" alt="expresion profunda">
+                    </div>
+                    <div class="card-body">
+                        <h2>Simfonía de colores</h2>
+                        <p>por María García</p>
+                    </div>
+                    <div class="card-footer">
+                        <h2>€1800</h2>
+
+                        <div class="card-button-footer">
+                            <div class="info-item">
+                                <i class="fa-regular fa-heart icono"></i>
+                            </div>
+
+                            <div id="btn-comprar">
+                                <i class="fa-solid fa-cart-shopping icono-card-footer"></i>
+                                <p>Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="seccion-reseñas" class="seccion" style="display: none;">
+                <div class="barras-reseña">
+                    <div class="barra-comentario">
+
+                        <div class="persona-info">
+
+                            <div class="reseña-imagen">
+                                <img src="/artistas/perfil/imagenes/anciana.jpg" alt="anciana">
+                            </div>
+
+                            <div class="datos">
+                                <h2>Laura Sánchez</h2>
+                                <p>14 de octubre de 2025</p>
+                            </div>
+
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="comentario">
+                            <p>Obra excepcional. La calidad y los detalles superaron mis expectativas. María es una
+                                artista muy profesional y respondió rápidamente a todas mis preguntas.</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="barra-comentario">
+
+                        <div class="persona-info">
+
+                            <div class="reseña-imagen">
+                                <img src="/artistas/perfil/imagenes/hombre.jpg" alt="hombre">
+                            </div>
+
+                            <div class="datos">
+                                <h2>Carlos Martínez</h2>
+                                <p>27 de septiembre de 2025</p>
+                            </div>
+
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="comentario">
+                            <p>Compré dos obras y estoy encantado. El empaquetado fue impecable y llegaron en perfectas
+                                condiciones. Muy recomendable.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="barra-comentario">
+
+                        <div class="persona-info">
+
+                            <div class="reseña-imagen">
+                                <img src="/artistas/perfil/imagenes/mujer.jpg" alt="mujer">
+                            </div>
+
+                            <div class="datos">
+                                <h2>Ana Torres</h2>
+                                <p>9 de septiembre de 2025</p>
+                            </div>
+
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                                <i class="fa-solid fa-star icono-estrella"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="comentario">
+                            <p>Hermosa obra, los colores son aún más vibrantes en persona. El envío tardó un poco más de
+                                lo esperado, pero valió la pena la espera.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div id="seccion-sobremi" class="seccion" style="display: none;">
+                <div class="contenedor-info-detallada">
+                    <div class="acerca">
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-medal icono-medal"></i>
+                            <h2>Acerca de mi trabajo</h2>
+
+                        </div>
+
+                        <p>Artista abstracta especializada en texturas y colores vibrantes. Mi trabajo explora la
+                            intersección entre la emoción y la forma, creando piezas que invitan a la contemplación. Con
+                            más de 15 años de experiencia, mi arte ha sido exhibido en galerías de España, Francia e
+                            Italia.</p>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="especialidad">
+                        <h2>Especialidad</h2>
+                        <div class="categorias">
+                            <div class="caja-categoria">Óleo</div>
+                            <div class="caja-categoria">Abstracto</div>
+                            <div class="caja-categoria">Contemporáneo</div>
+                            <div class="caja-categoria">Texturas</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="info-detallada-footer">
+                        <div class="tecnicas-principales">
+                            <h2>Técnicas principales</h2>
+                            <ul>
+                                <li>Óleo sobre lienzo</li>
+                                <li>Acrílico</li>
+                                <li>Técnica mixta</li>
+                                <li>Textura en relieve</li>
+                            </ul>
+                        </div>
+
+                        <div class="exposiciones">
+                            <h2>Exposiciones</h2>
+                            <ul>
+                                <li>Galería Nacional, Barcelona (2023)</li>
+                                <li> Museo de Arte Moderno, Madrid (2022)</li>
+                                <li>Bienal de Arte, Valencia (2021)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col marca">
+                <div class="footer-logo">
+                    <img src="imagenes/logo.jpg" alt="Logo ArteMatch">
+                    <div>
+                        <h3 class="logo">ArteMatch</h3>
+                        <p class="slogan">Conectando talento</p>
+                    </div>
+                </div>
+                <p class="descripcion">La plataforma que une artistas con oportunidades únicas</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Artistas</h4>
+                <ul>
+                    <li><a href="#">Crear Portafolio</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Clientes</h4>
+                <ul>
+                    <li><a href="#">Buscar Artistas</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#">Categorías</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-copy">
+            <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
