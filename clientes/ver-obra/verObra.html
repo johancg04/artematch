@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verObra.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>ArteMatch</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="/landing/imagenes/logo.jpg" alt="Logo ArteMatch">
+            <div class="texto-logo">
+                <h1>ArteMatch</h1>
+                <p>Conectando talento con oportunidades</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Descubrir</a>
+            <script>
+                document.getElementById("irADescubrir").onclick = function () {
+                    window.location.href = "descubrir.html";
+                }
+            </script>
+            <a href="#">Artistas</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="usuario-info">
+                <i class="fa-regular fa-user"></i>
+                <span>Cliente</span>
+            </div>
+
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Mensajes</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="layout-compra">
+        <div class="contenedor-imagenes">
+
+            <div class="imagen-principal">
+                <img src="imagenes/imagen1.jpg" alt="imagen 1">
+            </div>
+
+            <div class="contenedor-img-secundarias">
+                <img src="imagenes/imagen1.jpg" alt="imagen1">
+                <img src="imagenes/imagen2.jpg" alt="imagen2">
+                <img src="imagenes/imagen3.jpg" alt="imagen3">
+                <img src="imagenes/imagen4.jpeg" alt="imagen4">
+            </div>
+
+            <div class="stats-imagenes">
+                <div class="vistas">
+                    <i class="fa-regular fa-eye icono-vista"></i>
+                    <p>1205 vistas</p>
+                </div>
+                <div class="likes">
+                    <i class="fa-regular fa-heart icono.corazon"></i>
+                    <p>234 likes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-informacion">
+
+            <div class="informacion-head">
+
+                <div class="contenedor-categoria">
+                    <p>Abstracto</p>
+                </div>
+
+                <h1>Abstracción contemporánea</h1>
+
+                <div class="foto-info">
+                    <img src="imagenes/mujer.jpg" alt="mujer">
+                    <div class="info-texto">
+                        <h3>María García</h3>
+                        <div class="stats">
+                            <i class="fa-solid fa-star icono-estrella"></i>
+                            <p>4.9 (87 reseñas)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contenedor-comprar">
+                <div class="contenedor-precio">
+                    <h1>€1200</h1>
+                </div>
+
+                <div class="contenedor-compra-botones">
+                    <button class="comprar-ahora" id="comprar-ahora">Comprar ahora</button>
+                    <button class="consultar" id="consultar">Consultar</button>
+                </div>
+
+            </div>
+
+            <div class="informacion-body">
+                <h3>Detalles de la obra</h3>
+                <div class="especificaciones">
+
+                    <div class="especificacion">
+                        <h3>Dimensiones</h3>
+                        <div class="espe">
+                            <i class="fa-solid fa-ruler icono-regla"></i>
+                            <p>100 x 80 cm</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="especificacion">
+                        <h3>Técnica</h3>
+                        <div class="espe">
+                            <i class="fa-solid fa-palette icono-paleta"></i>
+                            <p>óleo sobre lienzo</p>
+                        </div>
+
+                    </div>
+
+                    <div class="especificacion">
+                        <h3>Año</h3>
+                        <div class="espe">
+                            <i class="fa-regular fa-calendar"></i>
+                            <p>2024</p>
+                        </div>
+
+                    </div>
+                    <div class="especificacion">
+                        <h3>Condición</h3>
+                        <div class="espe">
+                            <i class="fa-solid fa-shield-halved icono-escudo"></i>
+                            <p>Nueva</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Esta pieza explora la tensión entre el caos y el orden a través de capas vibrantes de color y
+                        textura. Los tonos cálidos de terracota y dorado contrastan con toques de azul profundo, creando
+                        una composición dinámica que invita a la contemplación. La aplicación gruesa de óleo crea una
+                        superficie táctil que cambia con la luz.</p>
+                </div>
+
+                <div class="materiales">
+                    <h3>Materiales utilizados</h3>
+                    <ul>
+                        <li>Óleo de alta calidad</li>
+                        <li>Lienzo de lino belga</li>
+                        <li>Barniz de protección UV</li>
+                    </ul>
+                </div>
+
+                <div class="Envio">
+                    <h3>Envio y devoluciones</h3>
+                    <div class="lista-envio">
+                        <div class="elemento-lista-envio">
+                            <i class="fa-solid fa-truck"></i>
+                            <div>
+                                <h5>Envío gratuito</h5>
+                                <P>Entrega en 5-7 días laborables. Embalaje profesional incluido.</P>
+                            </div>
+                        </div>
+                        <div class="elemento-lista-envio">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <div>
+                                <h5>Devolución gratuita</h5>
+                                <p>14 días para devolución si no estás satisfecho. Reembolso completo garantizado.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="elemento-lista-envio">
+                            <i class="fa-solid fa-shield"></i>
+                            <div>
+                                <h5>Compra segura</h5>
+                                <p>Pago 100% seguro con encriptación SSL. Protección del comprador incluida.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col marca">
+                <div class="footer-logo">
+                    <img src="/landing/imagenes/logo.jpg" alt="Logo ArteMatch">
+                    <div>
+                        <h3 class="logo">ArteMatch</h3>
+                        <p class="slogan">Conectando talento</p>
+                    </div>
+                </div>
+                <p class="descripcion">La plataforma que une artistas con oportunidades únicas</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Artistas</h4>
+                <ul>
+                    <li><a href="#">Crear Portafolio</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Clientes</h4>
+                <ul>
+                    <li><a href="#">Buscar Artistas</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#">Categorías</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-copy">
+            <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
