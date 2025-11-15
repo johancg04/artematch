@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="comunidad.css">
+    <script defer src="comunidad.js"></script>
+    <title>ArteMatch</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="/clientes/descubrir/imagenes/logo.jpg" alt="Logo ArteMatch">
+            <div class="texto-logo">
+                <h1>ArteMatch</h1>
+                <p>Conectando talento con oportunidades</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Descubrir</a>
+            <script>
+                document.getElementById("irADescubrir").onclick = function () {
+                    window.location.href = "descubrir.html";
+                }
+            </script>
+            <a href="#">Artistas</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="usuario-info">
+                <i class="fa-regular fa-user"></i>
+                <span>Cliente</span>
+            </div>
+
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Mensajes</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="titulo-buscador">
+
+        <div class="titulo">
+            <h1>Comunidades artísticas</h1>
+            <p>Únete, aprende y comparte con artistas de todo el mundo</p>
+        </div>
+
+        <div class="buscador">
+            <form>
+                <div class="input-con-icono">
+                    <i class="fa-solid fa-magnifying-glass icono"></i>
+                    <input type="text" placeholder="Buscar comunidades...">
+                </div>
+
+
+                <button>Buscar Comunidad</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="layout-comunidades">
+
+        <div class="layout-opciones">
+            <button id="btn-descubrir" class="layout-boton activo">Descubrir</button>
+            <button id="btn-miscomunidades" class="layout-boton">Mis comunidades</button>
+            <button id="btn-tendencias" class="layout-boton">Tendencias</button>
+        </div>
+
+        <div id="seccion-descubrir" class="seccion">
+
+            <div class="layer">
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/images.jpeg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Arte Abstracto Contemporáneo</h3>
+                        <p>Espacio para amantes y creadores de arte abstracto</p>
+                        <div class="card-categoria">
+                            Abstracto
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>2543</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>1234</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/acualeristas.jpeg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Acuarelistas Peruanos</h3>
+                        <p>Comunidad de acuarelistas y aficionados de Perú</p>
+                        <div class="card-categoria">
+                            Acuarela
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>1876</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>892</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/arte-nft.jpg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Arte Digital & NFT</h3>
+                        <p>Explora el mundo del arte digital y NFTs</p>
+                        <div class="card-categoria">
+                            Digital
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>3421</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>2156</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="layer">
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/retratos realistas.jpeg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Retratos Realistas</h3>
+                        <p>Comunidad dedicada al retrato y técnicas avanzadas</p>
+                        <div class="card-categoria">
+                            Retrato
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>1234</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>567</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/paisajista.jpeg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Paisajistas Unidos</h3>
+                        <p>Para artistas que aman capturar la belleza de la naturaleza</p>
+                        <div class="card-categoria">
+                            Paisaje
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>2109</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>1543</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/escultura-moderna.jpeg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Escultura Moderna</h3>
+                        <p>Comunidad de escultores contemporáneos</p>
+                        <div class="card-categoria">
+                            Escultura
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>876</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>423</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="seccion-miscomunidades" class="seccion" style="display: none;">
+            <div class="contenedor-barras">
+                <div class="barra">
+
+                    <div class="contenedor-info">
+                        <img src="/clientes/comunidad/imagenes/images.jpeg" alt="abstracto">
+
+                        <div class="info-texto">
+                            <h2>Arte Abstracto Contemporáneo</h2>
+
+                            <div class="contenedor-miembros">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2543 miembros</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="contenedor-btn-barra">
+                        <button>Ver Comunidad</button>
+                    </div>
+
+                </div>
+
+                <div class="barra">
+
+                    <div class="contenedor-info">
+                        <img src="/clientes/comunidad/imagenes/paisajista.jpeg" alt="paisajista">
+
+                        <div class="info-texto">
+                            <h2>Paisajistas Unidos</h2>
+
+                            <div class="contenedor-miembros">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>2109 miembros</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="contenedor-btn-barra">
+                        <button>Ver Comunidad</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="seccion-tendencias" class="seccion" style="display: none;">
+            <div class="contenedor-cards">
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/images.jpeg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Arte Abstracto Contemporáneo</h3>
+                        <p>Espacio para amantes y creadores de arte abstracto</p>
+                        <div class="card-categoria">
+                            Abstracto
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>2543</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>1234</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-head">
+                        <img src="/clientes/comunidad/imagenes/arte-nft.jpg" alt="arte abstracto">
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Arte Digital & NFT</h3>
+                        <p>Explora el mundo del arte digital y NFTs</p>
+                        <div class="card-categoria">
+                            Digital
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="stats">
+                            <div class="cantidad-personas">
+                                <i class="fa-solid fa-user-group icono"></i>
+                                <p>3421</p>
+                            </div>
+
+                            <div class="cantidad-mensajes">
+                                <i class="fa-regular fa-message icono"></i>
+                                <p>2156</p>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-btn">
+                            <button class="btn-unirse">
+                                Unirse
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col marca">
+                <div class="footer-logo">
+                    <img src="/clientes/descubrir/imagenes/logo.jpg" alt="Logo ArteMatch">
+                    <div>
+                        <h3 class="logo">ArteMatch</h3>
+                        <p class="slogan">Conectando talento</p>
+                    </div>
+                </div>
+                <p class="descripcion">La plataforma que une artistas con oportunidades únicas</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Artistas</h4>
+                <ul>
+                    <li><a href="#">Crear Portafolio</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Para Clientes</h4>
+                <ul>
+                    <li><a href="#">Buscar Artistas</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#">Categorías</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-copy">
+            <p>© 2024 ArteMatch. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
