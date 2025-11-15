@@ -27,13 +27,29 @@
         </div>
 
         <nav class="menu">
-            <a href="#">Cómo funciona</a>
-            <a href="#">Beneficios</a>
+            <a href="#">Descubrir</a>
+            <script>
+                document.getElementById("irADescubrir").onclick = function () {
+                    window.location.href = "descubrir.html";
+                }
+            </script>
+            <a href="#">Artistas</a>
         </nav>
 
-        <div class="acciones">
-            <button class="btn-login">Iniciar Sesión</button>
-            <button class="btn-unete">Únete Ahora</button>
+        <div class="usuario">
+            <div class="usuario-info">
+                <i class="fa-regular fa-user"></i>
+                <span>Cliente</span>
+            </div>
+
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Mensajes</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 

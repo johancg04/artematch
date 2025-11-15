@@ -26,13 +26,33 @@
         </div>
 
         <nav class="menu">
-            <a href="#">Cómo funciona</a>
-            <a href="#">Beneficios</a>
+            <a href="#" id="irDashBoard">Dashboard</a>
+            <script>
+                document.getElementById("irDashBoard").onclick = function () {
+                    window.location.href = "dashboard.html";
+                }
+            </script>
+            <a href="#" id="irPerfil">Mi perfil</a>
+            <script>
+                document.getElementById("irPerfil").onclick = function () {
+                    window.location.href = "/artistas/perfil/";
+                }
+            </script>
         </nav>
 
-        <div class="acciones">
-            <button class="btn-login">Iniciar Sesión</button>
-            <button class="btn-unete">Únete Ahora</button>
+        <div class="usuario">
+            <div class="usuario-info">
+                <i class="fa-regular fa-user"></i>
+                <span>Artista</span>
+            </div>
+
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 

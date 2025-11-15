@@ -94,6 +94,72 @@ body {
     cursor: pointer;
 }
 
+.usuario {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #1e293b;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.usuario-info:hover {
+    background-color: #93B0C5;
+    color: white;
+}
+
+.usuario-info i {
+    font-size: 18px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 160px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 50;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.dropdown li a:hover {
+    background-color: #f1f5f9;
+    color: #93B0C5;
+}
+
+.usuario:hover .dropdown {
+    display: block;
+}
+
+
 #msgParaTi,
 #msgTendencias,
 #btnRestablecer,
@@ -318,7 +384,7 @@ input:focus {
     border: none;
     padding: 6px;
     color: white;
-    background-color: red;
+    background-color: rgb(205, 100, 100);
     border-radius: 100px;
     left: 1.5rem;
 }
@@ -328,7 +394,7 @@ input:focus {
 }
 
 .btn-comprar {
-    background: #ff7657;
+    background: #93B0C5;
     border: none;
     color: white;
     padding: 6px 12px;

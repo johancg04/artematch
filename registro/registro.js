@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (email === "cliente@artematch.com") {
-            window.location.href = "/clientes/descubrir/duscubrir.html";
+            window.location.href = "/clientes/descubrir/descubrir.html";
             return;
         }
 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (email === "cliente@artematch.com") {
-            window.location.href = "/clientes/descubrir/duscubrir.html";
+            window.location.href = "/clientes/descubrir/descubrir.html";
             return;
         }
 
